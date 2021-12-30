@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Licorice&display=swap");
+
+.home {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  padding: 0.5rem 3rem 10rem;
+}
+
+.images {
+  position: relative;
+  width: 40%;
+  margin-bottom: 10rem;
+}
+
+.image1 img {
+  width: 15rem;
+  position: absolute;
+  right: 3rem;
+  top: 1rem;
+}
+
+.image2 img {
+  width: 15rem;
+  position: absolute;
+  left: 1rem;
+  top: 6rem;
+}
+
+.image3 img {
+  width: 15rem;
+  position: absolute;
+  bottom: -8rem;
+  left: -3rem;
+}
+
+.introduction {
+  width: 50%;
+  height: 100%;
+  margin-top: 3rem;
+}
+
+.header {
+  text-align: left;
+}
+
+.desciption {
+  width: 85%;
+  margin-top: 2rem;
+  font-family: "Licorice", cursive, sans-serif;
+  font-size: 120%;
+  text-align: justify;
+}

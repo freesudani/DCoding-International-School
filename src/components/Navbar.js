@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import classes from "./Navbar.module.css";
 import { SidebarData } from "../data/SidebarData";
 import { IconContext } from "react-icons";
-import LogoImage from "../components/assets/aba31ca67d7f4a5db569fc1de07280a2.png";
-import LogoSmall from "../components/assets/aba31ca67d7f4a5db569fc1de07280a2.jpg";
+import LogoImage from "../assets/aba31ca67d7f4a5db569fc1de07280a2.png";
+import LogoSmall from "../assets/aba31ca67d7f4a5db569fc1de07280a2.jpg";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
