@@ -8,6 +8,10 @@ import "./App.css";
 import Footer from "./components/Footer";
 
 function App() {
+  const sendMsgHandler = (data) => {
+    console.log(data);
+  };
+
   return (
     <>
       <Router>
@@ -16,7 +20,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
           <Route path="/programs" element={<Programs />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/contact"
+            onSendmsg={sendMsgHandler}
+            element={<Contact />}
+          />
         </Routes>
         <Footer />
       </Router>
