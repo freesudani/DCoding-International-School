@@ -1,0 +1,44 @@
+.card {
+  height: 30rem;
+  width: 20rem;
+  border: 1px solid #000;
+  border-radius: 10px;
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  filter: brightness(70%);
+}
+
+.title {
+  text-transform: capitalize;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.icon {
+  position: absolute;
+  width: 0.5rem;
+  font-size: 2rem;
+  top: 1rem;
+  left: 1rem;
+  color: #aba104;
+}
+
+.desc {
+  text-align: center;
+  padding: 0.1rem 0.5rem;
+}
+
+.btn {
+  position: absloute;
+  background-color: #aba104;
+  border-radius: 5px;
+  color: white;
+  width: 5rem;
+  height: 3rem;
+  bottom: -2rem;
+  cursor: pointer;
+}
