@@ -1,0 +1,34 @@
+.card {
+  width: 75%;
+  height: 20rem;
+  margin: 1rem auto;
+  border: 1px solid #000;
+  display: flex;
+  margin: 1rem;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.image {
+  width: 100%;
+  height: 10rem;
+  margin-bottom: 0.5rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.link {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.desc {
+  text-align: justify;
+  padding: 0.5rem;
+}
+
+.date {
+  bottom: 0.1rem;
+}
