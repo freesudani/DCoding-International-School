@@ -5,6 +5,7 @@
   align-items: center;
   padding: 2rem auto;
   height: 16rem;
+  z-index: 1;
 }
 
 .programs {

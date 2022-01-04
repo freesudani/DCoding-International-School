@@ -3,6 +3,8 @@ import "../App.css";
 import classes from "./Contact.module.css";
 import { questions } from "../data/FreqAskedQuestion";
 import SingleQuestion from "../components/SingleQuestion";
+import transitionMain from "../UI/Transitions";
+import { motion } from "framer-motion";
 
 const Contact = (props) => {
   const nameRef = useRef();
@@ -24,7 +26,13 @@ const Contact = (props) => {
   };
 
   return (
-    <div className={classes.contact}>
+    <motion.div
+      className={classes.contact}
+      variants={transitionMain}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div className={classes.frequent}>
         <h3>Frequently Asked Questions</h3>
         <div>
@@ -65,7 +73,7 @@ const Contact = (props) => {
         </div>
         <button className={classes.button}>Send</button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

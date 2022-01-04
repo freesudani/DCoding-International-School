@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../App.css";
 import NewsCard from "../components/NewsCard";
-import classes from "./News.module.css";
 import "./Masonry.css";
 import Masonry from "react-masonry-css";
+import transitionMain from "../UI/Transitions";
+import { motion } from "framer-motion";
 
 const News = () => {
   const [newsItems, setNewsItems] = useState([]);
@@ -44,22 +45,33 @@ const News = () => {
   }, []);
 
   return (
-    <Masonry
-      breakpointCols={breakpoints}
-      className="my-masonry-grid"
-      columnClassName="my-masonry-grid-column"
+    <motion.div
+      variants={transitionMain}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
     >
-      {newsItems.map((item, index) => (
-        <NewsCard
-          title={item.title}
-          link={item.link}
-          desciption={item.desciption}
-          date={item.date}
-          image={item.image}
-          key={index}
-        />
-      ))}
-    </Masonry>
+      <Masonry
+        breakpointCols={breakpoints}
+        className="my-masonry-grid"
+        columnClassName="my-masonry-grid-column"
+        variants={transitionMain}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
+        {newsItems.map((item, index) => (
+          <NewsCard
+            title={item.title}
+            link={item.link}
+            desciption={item.desciption}
+            date={item.date}
+            image={item.image}
+            key={index}
+          />
+        ))}
+      </Masonry>
+    </motion.div>
   );
 };
 
