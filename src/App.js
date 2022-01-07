@@ -6,6 +6,8 @@ import News from "./pages/News";
 import Programs from "./pages/Programs";
 import "./App.css";
 import Footer from "./components/Footer";
+import Extracurricular from "./pages/Extracurricular";
+import Regular from "./pages/Regular";
 
 function App() {
   const sendMsgHandler = (data) => {
@@ -19,7 +21,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
-          <Route path="/programs" element={<Programs />} />
+          <Route path="/programs" element={<Programs />}>
+            <Route path="programs/extra" element={<Extracurricular />} />
+            <Route path="programs/regular" element={<Regular />} />
+          </Route>
+
           <Route
             path="/contact"
             onSendmsg={sendMsgHandler}

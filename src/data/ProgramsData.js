@@ -7,6 +7,7 @@ export const ProgramsData = [
   {
     title: "regular curriculum",
     icon: <MdMenuBook />,
+    path: "regular",
     image: Image1,
     description:
       "The regular classes program is instructional in nature. It consist of continuity of movement experiences designed to help the individual gain movement skills and concepts that will enhance his ability to function efficiently and happily in all his life experiences",
@@ -14,6 +15,7 @@ export const ProgramsData = [
   {
     title: "extracurricular activities",
     icon: <MdSportsKabaddi />,
+    path: "extra",
     image: Image2,
     description:
       "extracurricular activities include sports, student government, community service, employment, arts, hobbies, and educational clubs, usually takes place after regular hours or on the weekends",

@@ -1,20 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import classes from "./RegularCard.module.css";
 
-import classes from "./ProgramCard.module.css";
-
-const ProgramCard = (props) => {
+const RegularCard = (props) => {
   return (
     <div className={classes.card}>
       <img src={props.image} alt={props.title} className={classes.image} />
       <h2 className={classes.title}>{props.title}</h2>
       <div className={classes.icon}>{props.icon}</div>
       <p className={classes.desc}>{props.description}</p>
-      <Link to={props.path} className={classes.btn}>
-        Details
-      </Link>
     </div>
   );
 };
 
-export default ProgramCard;
+export default RegularCard;
