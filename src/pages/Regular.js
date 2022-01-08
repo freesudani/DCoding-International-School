@@ -14,7 +14,7 @@ const Regular = () => {
       animate="visible"
       exit="exit"
     >
-      {RegularData((data, index) => {
+      {RegularData.map((data, index) => {
         return <RegularCard {...data} key={index} />;
       })}
     </motion.div>

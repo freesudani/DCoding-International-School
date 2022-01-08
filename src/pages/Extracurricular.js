@@ -14,7 +14,7 @@ const Extracurricular = () => {
       animate="visible"
       exit="exit"
     >
-      {ExtracurricularData((data, index) => {
+      {ExtracurricularData.map((data, index) => {
         return <ExtracurricularCard {...data} key={index} />;
       })}
     </motion.div>

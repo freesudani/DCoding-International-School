@@ -12,6 +12,11 @@ const transitionMain = {
       duration: 1.5,
     },
   },
+
+  exit: {
+    opacity: 0,
+    x: "-100vw",
+  },
 };
 
 export default transitionMain;

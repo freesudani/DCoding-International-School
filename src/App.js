@@ -21,9 +21,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
-          <Route path="/programs" element={<Programs />}>
-            <Route path="programs/extra" element={<Extracurricular />} />
-            <Route path="programs/regular" element={<Regular />} />
+          <Route path="programs" element={<Programs />}>
+            <Route path="extra" element={<Extracurricular />} />
+            <Route path="regular" element={<Regular />} />
           </Route>
 
           <Route
