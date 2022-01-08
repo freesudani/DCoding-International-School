@@ -10,32 +10,33 @@ import Extracurricular from "./pages/Extracurricular";
 import Regular from "./pages/Regular";
 
 function App() {
-  const sendMsgHandler = (data) => {
-    console.log(data);
-  };
+	const sendMsgHandler = (data) => {
+		console.log(data);
+	};
 
-  return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/news" element={<News />} />
-          <Route path="programs" element={<Programs />}>
-            <Route path="extra" element={<Extracurricular />} />
-            <Route path="regular" element={<Regular />} />
-          </Route>
+	return (
+		<>
+			<Router>
+				<Navbar />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/news' element={<News />} />
+					<Route path='programs'>
+						<Route path='extra' element={<Extracurricular />} />
+						<Route path='regular' element={<Regular />} />
+						<Route index element={<Programs />} />
+					</Route>
 
-          <Route
+					<Route
             path="/contact"
-            onSendmsg={sendMsgHandler}
-            element={<Contact />}
-          />
-        </Routes>
-        <Footer />
-      </Router>
-    </>
-  );
+						onSendmsg={sendMsgHandler}
+						element={<Contact />}
+					/>
+				</Routes>
+				<Footer />
+			</Router>
+		</>
+	);
 }
 
 export default App;
