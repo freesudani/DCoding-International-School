@@ -1,5 +1,5 @@
 import React from "react";
-import { ProgramsData } from "../data/ProgramsData";
+import { ProgramsTypesData } from "../data/ProgramsTypesData";
 import ProgramCard from "../components/ProgramCard";
 import classes from "./Programs.module.css";
 import transitionMain from "../UI/Transitions";
@@ -16,7 +16,7 @@ const Programs = () => {
         animate="visible"
         exit="exit"
       >
-        {ProgramsData.map((data, index) => {
+        {ProgramsTypesData.map((data, index) => {
           return <ProgramCard {...data} key={index} />;
         })}
         <Outlet />
