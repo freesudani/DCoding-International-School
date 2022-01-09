@@ -10,8 +10,8 @@ const ProgramCard = (props) => {
       <h2 className={classes.title}>{props.title}</h2>
       <div className={classes.icon}>{props.icon}</div>
       <p className={classes.desc}>{props.description}</p>
-      <Link to={props.path} className={classes.btn}>
-        Details
+      <Link to={props.path}>
+        <button className={classes.btn}>Details</button>
       </Link>
     </div>
   );

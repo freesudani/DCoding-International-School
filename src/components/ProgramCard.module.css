@@ -4,11 +4,18 @@
   border: 1px solid #000;
   border-radius: 10px;
   position: relative;
+  padding: 0rem 0rem 0.5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .image {
   width: 100%;
   filter: brightness(70%);
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .title {
@@ -33,12 +40,13 @@
 }
 
 .btn {
-  position: absloute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #aba104;
   border-radius: 5px;
   color: white;
   width: 5rem;
   height: 3rem;
-  bottom: -2rem;
   cursor: pointer;
 }

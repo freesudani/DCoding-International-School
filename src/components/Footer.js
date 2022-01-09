@@ -4,9 +4,9 @@ import classes from "./Footer.module.css";
 import LogoImage from "../assets/aba31ca67d7f4a5db569fc1de07280a2.png";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ sidebar, showSidebar }) => {
   return (
-    <div className={classes.footer}>
+    <div className={sidebar ? `${classes.footeractive}` : `${classes.footer}`}>
       <ul className={classes.programs}>
         {SidebarData.map((data, index) => {
           return (

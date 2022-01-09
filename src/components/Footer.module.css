@@ -6,6 +6,21 @@
   padding: 2rem auto;
   height: 16rem;
   z-index: 1;
+  transition: 100ms;
+}
+
+.footeractive {
+  background-color: #0a0e2e;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem auto;
+  right: 0;
+  height: 14rem;
+  z-index: 1;
+  width: 85vw;
+  margin-left: 15rem;
 }
 
 .programs {

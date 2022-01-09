@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import classes from "./Navbar.module.css";
@@ -7,11 +7,7 @@ import { IconContext } from "react-icons";
 import LogoImage from "../assets/aba31ca67d7f4a5db569fc1de07280a2.png";
 import LogoSmall from "../assets/aba31ca67d7f4a5db569fc1de07280a2.jpg";
 
-const Navbar = () => {
-  const [sidebar, setSidebar] = useState(false);
-
-  const showSidebar = () => setSidebar(!sidebar);
-
+const Navbar = ({ sidebar, showSidebar }) => {
   return (
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
