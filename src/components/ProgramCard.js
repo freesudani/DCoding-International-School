@@ -11,7 +11,7 @@ const ProgramCard = (props) => {
       <div className={classes.icon}>{props.icon}</div>
       <p className={classes.desc}>{props.description}</p>
       <Link to={props.path}>
-        <button className={classes.btn}>Details</button>
+        <button className={classes.btn}> Go to Details</button>
       </Link>
     </div>
   );
