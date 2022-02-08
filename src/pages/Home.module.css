@@ -53,3 +53,36 @@
   font-size: 120%;
   text-align: justify;
 }
+
+@media screen and (max-width: 600px) {
+  .images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .image1 img {
+    position: relative;
+    width: 10rem;
+  }
+  .image2 img {
+    position: relative;
+    width: 10rem;
+  }
+  .image3 img {
+    position: relative;
+    width: 10rem;
+  }
+
+  .introduction {
+    margin-top: 2.5rem;
+  }
+  .header {
+    font-size: 90%;
+  }
+
+  .desciption {
+    width: 100%;
+    font-size: 100%;
+  }
+}

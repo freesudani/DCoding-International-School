@@ -102,3 +102,22 @@ span {
 .text {
   color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+  .menubars {
+    font-size: 1.5rem;
+  }
+
+  .navmenu {
+    width: 200px;
+  }
+  .navmenuactive {
+    width: 200px;
+  }
+  .navtext a {
+    font-size: 15px;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
+}

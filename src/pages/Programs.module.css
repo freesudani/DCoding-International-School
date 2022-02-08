@@ -4,3 +4,12 @@
   justify-content: space-around;
   align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+  .programs {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -22,3 +22,11 @@
   height: 4rem;
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .programs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
